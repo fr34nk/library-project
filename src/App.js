@@ -13,11 +13,14 @@ function App() {
         <a
           className="App-link"
           href="https://reactjs.org"
-          target="_blank"
+         React target="_blank"
           rel="noopener noreferrer"
         >
           Learn 
         </a>
+        <h1 class="text-1xl font-bold underline">
+          Hello world!
+        </h1>
       </header>
     </div>
   );
