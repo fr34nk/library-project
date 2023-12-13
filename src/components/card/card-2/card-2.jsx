@@ -50,7 +50,7 @@ const Card2 = ({
 
     return (
         <div className={`
-            mt-0 ml-4 hover:m-2
+            mt-0 my-4 hover:m-2
             rounded 
             drop-shadow-md 
             transition-margin ease-in-out duration-500 delay-100

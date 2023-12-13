@@ -17,11 +17,13 @@ const GuiasPage = () => {
                 <div className="
                     p-2 bg-lime-500
                     shadow-lime-700 shadow-inner
+                    max-sm:justify-center max-sm:align-middle max-sm:text-center
                 ">
 
                     <h1 className="
                         p-8 font-plus font-semibold text-6xl
                         text-green-800
+                        max-sm:text-5xl max-sm:text-center
                         ">
                             <span className="
                                 text-8xl pt-2 p-1 pl-1 
@@ -34,7 +36,10 @@ const GuiasPage = () => {
                     </h1>
                 </div>
 
-                <h3 className="pl-10 pr-10 p-4 font-misans text-zinc-500  text-3xl">
+                <h3 className="
+                    pl-10 pr-10 p-4 font-misans text-zinc-500  text-3xl
+                    max-sm:text-2xl max-sm:text-center
+                ">
                     Página contendo guias de procedimentos e trabalhos para dicentes do instituto
                 </h3>
 
