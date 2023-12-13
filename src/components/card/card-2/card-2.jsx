@@ -29,34 +29,20 @@ const CardContentContainer = ({ children }) => {
 const Card2Container = ({ 
     children 
 }) => {
-
     return (
-        // <div className="flex flex-row flex-wrap flex-[3_2_30%] p-4 pr-2 pl-2">
-                // '8': 'repeat(8, minmax(0, 1fr))',
-                // grid grid-flow-col grid-cols-3 sm:grid-cols-3
-                // grid grid-cols-[200px_minmax(900px,_2fr)_100px]
-
-
-                // grid grid-cols-[minmax(300px,_.2fr)]
-
-                // 'layout': '200px minmax(900px, 1fr) 100px',
-
-                // grid grid-cols-[200px,_400px] md:grid-cols-[1fr]
-                // grid grid-cols-[200px,_400px] 
         <div 
             className="
-                grid sm:grid-cols-[1fr]  md:grid-cols-[400px]
+                grid sm:grid-cols-[1fr]  md:grid-cols-[1fr_1fr_1fr] gap-2
             "
         >
             { children }
         </div>
     )
-
 }
 
 const Card2 = ({
     title='title text',
-    text='paragraph text',
+    titleEmphasis=false,
     className='',
     contentEl=undefined,
     actionEl=undefined
@@ -65,7 +51,6 @@ const Card2 = ({
     return (
         <div className={`
             mt-0 ml-4 hover:m-2
-
             rounded 
             drop-shadow-md 
             transition-margin ease-in-out duration-500 delay-100
@@ -74,7 +59,7 @@ const Card2 = ({
             `}
         >
 
-            { true ? 
+            { titleEmphasis ? 
             
              <div className="
                 mt-4 pl-8 pt-3 mb-2

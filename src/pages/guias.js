@@ -70,6 +70,7 @@ const GuiasPage = () => {
                     />
 
                     <Card2
+                        titleEmphasis={true}
                         className='flex-[1_0_100%]'
                         title="Empréstimo"
                         contentEl={
