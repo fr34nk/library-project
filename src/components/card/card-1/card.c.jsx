@@ -16,7 +16,7 @@ const Card = ({
             rounded-sm
         ">
             <div className="w-full ">
-                <img className="w-full h-[50px] object-cover" src={img} />
+                <img alt="" className="w-full h-[50px] object-cover" src={img} />
             </div>            
             <div className="py-3 font-semibold text-sm/[1.2em]">
                 { title }

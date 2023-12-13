@@ -1,17 +1,16 @@
 import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
-import { MainPage } from './pages/main.page'
+import { MainPage } from './pages/home'
 
-function App() {
+
+function App () {
   return (
-    // <div className="App">
-      // <header className="App-header">
+    <div className="App">
+      {/* <header className="App-header"> */}
 
         <MainPage/>
 
-      // </header>
-    // </div>
+      {/* </header> */}
+    </div>
   );
 }
 

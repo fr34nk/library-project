@@ -22,7 +22,6 @@
     "export_env": "",
     "_predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "css:watch1": "npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch",
     "css:watch": "npx tailwindcss -i ./src/index.css -o ./public/output.css --watch",
     "build:css": "npx tailwindcss -i ./src/index.css -o ./public/output.css",
     "build:wo_ssl": "export NODE_OPTIONS=--openssl-legacy-provider; react-scripts build && npm run build:css",

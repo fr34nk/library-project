@@ -20,7 +20,7 @@ const SectionCall = ({
             `}
             >
             {
-                direction == "right" &&
+                direction === "right" &&
                     <div className="w-[40%] h-full relative"></div>
             }
 
@@ -61,7 +61,7 @@ const SectionCall = ({
             </div>
 
             {
-                direction == "left" &&
+                direction === "left" &&
                     <div className="w-[40%] h-1"></div>
             }
         </div>
