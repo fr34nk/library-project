@@ -11,6 +11,8 @@ import { HomePage } from './pages/home';
 
 import './index.css';
 import { GuiasPage } from './pages/guias';
+import { ServicosPage } from './pages/servicos';
+import { ContatosPage } from './pages/contatos-e-equipe';
 
 const router = createBrowserRouter([
   {
@@ -24,11 +26,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/servicos",
-    element: <HomePage/>,
+    element: <ServicosPage/>,
   },
   {
-    path: "/contatos-e-equipe",
-    element: <HomePage/>,
+    path: "/contatos",
+    element: <ContatosPage/>,
   },
   {
     path: "/guias",

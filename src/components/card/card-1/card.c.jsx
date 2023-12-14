@@ -5,13 +5,14 @@ const Card = ({
     img,
     link,
     text,
+    maxWidth=""
 }) => {
 
     return (
         <div className="
             flex flex-col bg-slate-100
-            w-[20%]
-            p-2
+            w-[20%] max-w-[200px]
+            p-4
             justify-between
             rounded-sm
         ">
@@ -24,7 +25,7 @@ const Card = ({
 
             { 
                 text && 
-                <div>
+                <div className="text-zinc-500 text-sm pt-2 pb-2">
                     { text }
                 </div>
             }

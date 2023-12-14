@@ -2,27 +2,44 @@ import React from 'react';
 import { Header } from '../components/header/header';
 import { Footer } from '../components/footer/footer'
 import  { BlockButtons } from '../components/buttons/block-buttons/index'
-import { SectionCall }  from '../components/page-section/page-section.c';
+import { SectionCall }  from '../components/page-section/page-section-1/page-section.c';
 import { CardListComponent, Card } from '../components/card/card-1/card.c';
-
-const Img = ({ props: { src } }) => {
-    return (
-        <img 
-            alt=""
-            src={src} 
-        />
-    )
-}
 
 const HomePage = () => {
     return (
         <div className="relative grow w-full ">
             <Header/>
-            <Img props={{
-                src: "https://i.huffpost.com/gen/1789484/images/o-CHILD-READING-facebook.jpg"
-            }}
-            
-            ></Img>
+            <div className="
+                relative 
+                max-h-[400px]
+                overflow-hidden
+                object-cover
+                text-end
+            ">
+                <img 
+                    className="" 
+                    src="/biblioteca_ifc_v1.jpg"
+                />
+                <h1 className="
+                    w-1/2
+                    
+                    absolute right-4 top-1/4
+
+                    text-8xl 
+                    font-black
+                    ">
+                        <span className="bg-slate-50">
+                            <span className="text-lime-600 inline-block">Biblioteca</span>
+                            <span> </span>
+                            <span> </span>
+                            <span className="text-green-800 inline-block">IFC</span>
+                            <span> </span>
+                            <span className="text-lime-600 inline-block">Videira</span>
+
+                        </span>
+                </h1>
+            </div>
+
 
             <div className="z-10 flex gap-2 relative -top-8 mr-2 ml-2">
                 <BlockButtons
@@ -77,17 +94,20 @@ const HomePage = () => {
                     img='https://www2.deloitte.com/content/dam/Deloitte/us/Images/promo_images/us-promos/cyber-lock.jpg'
                     title="Renovação das senhas"
                     link='https://www2.deloitte.com/content/dam/Deloitte/us/Images/promo_images/us-promos/cyber-lock.jpg'
+                    text="Shrunk to the specified length. The background image is scaled to cover the entire container. The background image is scaled to fit inside the container"
                 />
 
                 <Card
                     img='https://notionpress.com/blog/wp-content/uploads/2017/09/free-ebook-image.jpg'
                     title="Livros disponível em Ebook"
                     link='https://notionpress.com/blog/wp-content/uploads/2017/09/free-ebook-image.jpg'
+                    text="Specified length. The background image is scaled to cover the entire container. The background image is scaled to fit inside the container"
                 />
 
                 <Card
                     img='https://www2.deloitte.com/content/dam/Deloitte/us/Images/promo_images/us-promos/cyber-lock.jpg'
                     title="Livros disponível em Ebook"
+                    text="The background image is displayed at its original size. This is the default value. The background image is stretched ..."
                     link='https://notionpress.com/blog/wp-content/uploads/2017/09/free-ebook-image.jpg'
                 />
 

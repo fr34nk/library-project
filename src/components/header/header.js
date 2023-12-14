@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const HeaderItems = () => {
     const list = [
         { title: "Home", link: "/", alt: "" },
-        { title: "Serviços", link: "", alt: "" },
+        { title: "Serviços", link: "/servicos", alt: "" },
         { title: "Guia Biblioteca", link: "/guias", alt: "" },
-        { title: "Contato", link: "", alt: "" },
+        { title: "Contato", link: "/contatos", alt: "" },
     ]
 
     const _list = list.map((item, idx) => {
