@@ -11,7 +11,7 @@ const Card = ({
     return (
         <div className="
             flex flex-col bg-slate-100
-            w-[20%] max-w-[200px]
+            min-w-[150px]
             p-4
             justify-between
             rounded-sm

@@ -1,4 +1,5 @@
-const React = require('react');
+import React from 'react';
+
 
 const SectionCall = ({ 
     direction,
@@ -17,6 +18,7 @@ const SectionCall = ({
                 flex
                 flex-row
             `}
+            style={{backgroundImage: '/biblioteca_ifc_v1.jpg'}}
             >
             {
                 direction === "right" &&
@@ -30,10 +32,11 @@ const SectionCall = ({
                 bg-no-repeat
                 bg-center
 
-                backdrop-brightness-75
+
                 bg-green-700
-                bg-blend-color-dodge
-                bg-opacity-70
+
+                bg-opacity-90
+                bg-blend-overlay
                 "
             >
 

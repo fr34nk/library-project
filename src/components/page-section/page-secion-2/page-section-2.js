@@ -63,28 +63,27 @@ const LeftSide = ({
     )
 }
 
-const SectionSideEmphasisText = ({
 
-}) => {
+// const SectionEmphasisText = ({
+// }) => {
+// }
 
-}
-
-const SectionSideEmphasisImage = ({
-}) => {
-    // bg-[url('http://127.1.1.1:1111/public/1.png')]
-    return (
-        <div className={`
-            relative
-            h-full
-            transfrom scale-[1.1]
-        `}>
-            <img 
-                className="relative cover"
-                src="http://127.1.1.1:1111/public/1.png"
-            />
-        </div>
-    )
-}
+// const SectionSideEmphasisImage = ({
+// }) => {
+//     // bg-[url('http://127.1.1.1:1111/public/1.png')]
+//     return (
+//         <div className={`
+//             relative
+//             h-full
+//             transfrom scale-[1.1]
+//         `}>
+//             <img 
+//                 className="relative cover"
+//                 src="http://127.1.1.1:1111/public/1.png"
+//             />
+//         </div>
+//     )
+// }
 
 
 const PageSection2 = ({ 
@@ -96,7 +95,7 @@ const PageSection2 = ({
 
     console.log(rightContent);
 
-    const transformClass = direction == "right" 
+    const transformClass = direction === "right" 
         ? "transform translate-x-3/4 -skew-x-12"
         : "transform -translate-x-1/4 skew-x-12"
 
@@ -130,7 +129,7 @@ const PageSection2 = ({
             ">
 
                 { 
-                    direction == "right"
+                    direction === "right"
                     ?
 
                     <>

@@ -13,28 +13,33 @@ import './index.css';
 import { GuiasPage } from './pages/guias';
 import { ServicosPage } from './pages/servicos';
 import { ContatosPage } from './pages/contatos-e-equipe';
+import { CursosPage } from './pages/cursos';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage/>,
-    errorElement: <GuiasPage />,
+    errorElement: <HomePage />,
   },
   {
     path: "/fontes-de-pesquisa",
     element: <HomePage/>,
+    errorElement: <HomePage />,
   },
   {
     path: "/servicos",
     element: <ServicosPage/>,
+    errorElement: <HomePage />,
   },
   {
     path: "/contatos",
     element: <ContatosPage/>,
+    errorElement: <HomePage />,
   },
   {
     path: "/guias",
     element: <GuiasPage/>,
+    errorElement: <HomePage />,
   },
     // - post (guia): guia do usuário
     // - post (guia): fontes de pesquisa
@@ -43,13 +48,15 @@ const router = createBrowserRouter([
 
   {
     path: "/cursos",
-    element: <HomePage/>,
+    element: <CursosPage/>,
+    errorElement: <HomePage />,
   },
     // - post (cursos): cursos online gratuitos
     // - post (cursos): cursos online gratuitos
   {
     path: "/ebooks",
     element: <HomePage/>,
+    errorElement: <HomePage />,
   },
     // - post (ebooks): coleção histório geral da africa
     // - post (ebooks): eu e outras poesias
@@ -60,6 +67,7 @@ const router = createBrowserRouter([
   {
     path: "/bibliotecas-do-ifc",
     element: <HomePage/>,
+    errorElement: <HomePage />,
   }
 ]);
 

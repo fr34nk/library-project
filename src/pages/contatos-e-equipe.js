@@ -6,10 +6,7 @@ import { PageSection2 } from '../components/page-section/page-secion-2/page-sect
 
 const ContatosPage = () => {
     return (
-        <div className="
-            bg-gradient-to-t from-zinc-100 via-zinc-100 to-zinc-50
-
-        ">
+        <div className="bg-gradient-to-t from-zinc-100 via-zinc-100 to-zinc-50">
 
             <Header/>
 
@@ -17,7 +14,7 @@ const ContatosPage = () => {
 
             {/* <PageSection2Container> */}
                 
-                          <br></br>
+                <br></br>
 
                 <PageSection2 
                     direction='left' 
@@ -54,11 +51,7 @@ const ContatosPage = () => {
                         </div>
                     }
                     rightContent={
-                        <div className="
-                            p-8
-                            text-start
-                            text-zinc-200
-                        ">
+                        <div className="p-8 text-start text-zinc-200">
                             <h1 className="text text-3xl font-extrabold">
                                 Equipe
                             </h1>
@@ -77,13 +70,10 @@ const ContatosPage = () => {
 
                         </div>
                 }>
+
                 </PageSection2>
 
-
                 <br></br>
-
-
-
 
             {/* </PageSection2Container>  */}
 
@@ -91,7 +81,6 @@ const ContatosPage = () => {
         </div>
     )
 }
-
 
 export { ContatosPage }
 
