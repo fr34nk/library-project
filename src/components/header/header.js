@@ -5,9 +5,9 @@ const headerTree = [
     { title: "Home", link: "/", alt: "" },
     { title: "Livros", link: "/servicos", alt: "", 
         sublist: [
-            { title: "Ebooks", link: "/ebooks", alt: "" },
-            { title: "Guia de Reserva de Livros", link: "/guia-reserva-livros", alt: "" },
-            { title: "Resenhas", link: "/resenhas", alt: "" }
+            { title: "Ebooks", link: "/livros/ebooks", alt: "" },
+            { title: "Guia de Reserva de Livros", link: "/guias/reserva", alt: "" },
+            { title: "Resenhas", link: "/eventos/resenhas", alt: "" }
         ]
     },
     { 
@@ -52,12 +52,11 @@ const SubList = ({
                 absolute left-[10%] top-[90%] 
                 w-full my-auto justify-center
                  
-                invisible 
-                opacity-0 
-
                 transition-all ease-in duration-300 delay-100
 
                 group-hover/item-lvl-${lvl - 1}:visible 
+
+                opacity-0 
                 group-hover/item-lvl-${lvl - 1}:opacity-100
                 group-hover/item-lvl-${lvl - 1}:top-[100%]
             `}>

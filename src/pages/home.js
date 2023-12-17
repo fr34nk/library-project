@@ -12,7 +12,6 @@ const HomePage = () => {
             {/* Emphasis Section */}
             <div className="heading">
 
-
                 <Header/>
                 <div className="
                     relative 
@@ -31,8 +30,7 @@ const HomePage = () => {
                         
                         absolute right-4 top-1/4
                         
-                        max-md:text-6xl
-                        text-8xl  max-sm:text-6xl 
+                        max-[1024]:text-8xl  text-6xl 
                         font-black
                         ">
                             <span className="bg-slate-50">
@@ -49,23 +47,48 @@ const HomePage = () => {
             </div>
 
 
-            {/* Divisor */}
-            <div className="w-full h-6 bg-green-700"> </div>
-
-
             {/* Body Section */}
             <div className="relative w-full">
-                <div className="z-10 -top-[75px] px-2 flex flex-row absolute max-sm:static max-sm:flex-col">
-                    <BlockButtons
-                        buttons={[
-                            { icon: 'A', title: 'Livros', desc: 'Livros em destaque', link: '' },
-                            { icon: 'B', title: 'Emprestimo', desc: 'Emprestimo de livros', link: '' },
-                            { icon: 'C', title: 'Cursos', desc: 'Link de Cursos', link: '/cursos' },
-                            { icon: 'D', title: 'Fontes ', desc: 'Fontes para Pesquisa', link: '/guias' },
-                            { icon: 'E', title: 'Noticias', desc: 'Noticias da biblioteca', link: '' }
-                        ]}
-                    />
+                <div className="
+                    relative
+
+                    h-6 z-20 p-3
+                    flex-row flex-wrap
+                    bg-gradient-to-b from-slate-100 to-slate-200
+
+                    max-sm:static
+                    max-sm:h-full
+                ">
+
+                    <div className="
+                        relative
+                        px-2 gap-2
+                        z-10 
+                        flex flex-row flex-wrap justify-start
+                        -translate-y-1/2
+
+                        max-sm:transform-none
+                        max-sm:flex-row
+                        max-sm:static
+                        max-sm:justify-items-stretch
+
+                        ">
+                        <BlockButtons
+                            buttons={[
+                                { icon: 'A', title: 'Livros', desc: 'Livros em destaque', link: '' },
+                                { icon: 'B', title: 'Emprestimo', desc: 'Emprestimo de livros', link: '' },
+                                { icon: 'C', title: 'Cursos', desc: 'Link de Cursos', link: '/cursos' },
+                                { icon: 'D', title: 'Fontes ', desc: 'Fontes para Pesquisa', link: '/guias' },
+                                { icon: 'E', title: 'Noticias', desc: 'Noticias da biblioteca', link: '' }
+                            ]}
+                        />
+                    </div>
+
                 </div>
+
+
+                {/* <div className="w-full h-6 bg-slate-200"> </div> */}
+
 
                 <div className="w-full static">
                     <SectionCall
@@ -78,6 +101,11 @@ const HomePage = () => {
                         }}
                     />
                 </div>
+
+
+                <div className="w-full h-6 bg-slate-200"> </div>
+
+
                 <div className="w-full relative max-sm:static">
                     <SectionCall
                         direction="left"
@@ -127,6 +155,8 @@ const HomePage = () => {
 
                 </CardListComponent>
 
+
+
                 <div className="
                     relative 
                     max-sm:static
@@ -144,6 +174,8 @@ const HomePage = () => {
 
 
             </div>
+
+            <div className="w-full h-6 bg-slate-200"> </div>
 
             <div className="max-sm:static relative ">
                 <Footer/>

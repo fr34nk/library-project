@@ -11,18 +11,18 @@ const FakeIcon = ({ props }) => {
 
 const BlockButton = (item) => {
     return (
-
         <Link to={item.link} key={item.title}
-            className="flex-grow" 
+            className="flex flex-nowrap flex-row " 
         >
             <div className="
-                flex flex-row 
                 bg-zinc-50 rounded-sm
-                hover:bg-zinc-200
+
+                hover:bg-lime-400
                 py-2 px-2 h-full
                 transition-colors ease-in duration-200 delay-100
-                justify-evenly
                 text-center
+                flex 
+
             ">
                 <div className="flex-1 p-2  ">
                     <FakeIcon props={item.icon}/>

@@ -5,17 +5,15 @@ import { PageSection2 } from '../components/page-section/page-secion-2/page-sect
 
 const ServicosPage = () => {
     return (
-
-
         <div className="
             bg-gradient-to-t from-zinc-100 via-zinc-100 to-zinc-50
+
         ">
 
             <Header/>
 
             <div className="h-[20px]"></div>
 
-            {/* <PageSection2Container> */}
                 
                 <PageSection2 
                     direction='right' 
@@ -27,7 +25,6 @@ const ServicosPage = () => {
                               inline-block
                             " 
                         >
-                        {/* text-[3em]  */}
                             <h2 className="
                             pl-8 pt-2
                             inline-block
@@ -69,8 +66,6 @@ const ServicosPage = () => {
                         </div>
                 }>
                 </PageSection2>
-
-                {/* <br></br> */}
 
                 <div className="
                     p-4

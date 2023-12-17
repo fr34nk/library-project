@@ -14,6 +14,8 @@ import { GuiasPage } from './pages/guias';
 import { ServicosPage } from './pages/servicos';
 import { ContatosPage } from './pages/contatos-e-equipe';
 import { CursosPage } from './pages/cursos';
+import { ReservasPage } from './pages/reserva';
+import { EbooksPage } from './pages/ebooks';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +34,11 @@ const router = createBrowserRouter([
     errorElement: <HomePage />,
   },
   {
+    path: "/livros/ebooks",
+    element: <EbooksPage/>,
+    errorElement: <HomePage />,
+  },
+  {
     path: "/contatos",
     element: <ContatosPage/>,
     errorElement: <HomePage />,
@@ -39,6 +46,11 @@ const router = createBrowserRouter([
   {
     path: "/guias",
     element: <GuiasPage/>,
+    errorElement: <HomePage />,
+  },
+  {
+    path: "/guias/reserva",
+    element: <ReservasPage/>,
     errorElement: <HomePage />,
   },
     // - post (guia): guia do usuário

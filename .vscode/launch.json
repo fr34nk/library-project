@@ -11,7 +11,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/src/specs/parsing-doc/spec1-parsing-main-doc.js"
+            // "program": "${workspaceFolder}/src/specs/parsing-doc/spec1-parsing-main-doc.js"
+            "program": "${workspaceFolder}/src/services/utils.js"
         }
     ]
 }

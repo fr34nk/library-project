@@ -5,6 +5,13 @@ const SectionCall = ({
     direction,
     section
 }) => {
+    let sectionDirection;
+    const sd = sectionDirection = ((direction) => ({
+        direction:direction,
+        right: direction === "right",
+        left: direction === "left"
+    }))(direction)
+
     return (
         <div 
             className={`w-full h-full
@@ -32,15 +39,16 @@ const SectionCall = ({
                 bg-no-repeat
                 bg-center
 
-
                 bg-green-700
 
                 bg-opacity-90
                 bg-blend-overlay
+                hover:scale-105
+                transition-transform ease-in-out duration-500
                 "
             >
 
-                <div className="p-8">
+                <div className={`p-8 text-${sd.left ? 'start' : 'end' }`}>
                     <div className="">
                         <h2 
                             className=' text-zinc-200 pb-0 text-3xl font-extrabold'
