@@ -47,8 +47,8 @@ const HeadingEmphasis = ({
     }
 
 
-    const lineEls = lines.map((line) => {
-        return <div className="static -translate-y-50">
+    const lineEls = lines.map((line, idx) => {
+        return <div key={idx} className="static -translate-y-50">
             { buildElText(line) } 
         </div>
     })

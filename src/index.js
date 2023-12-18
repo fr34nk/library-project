@@ -12,16 +12,23 @@ import { HomePage } from './pages/home';
 import './index.css';
 import { GuiasPage } from './pages/guias';
 import { ServicosPage } from './pages/servicos';
-import { ContatosPage } from './pages/contatos-e-equipe';
+import { ContatoPage } from './pages/contato';
 import { CursosPage } from './pages/cursos';
 import { ReservasPage } from './pages/reserva';
 import { EbooksPage } from './pages/ebooks';
 import { ErrorPage } from './pages/error';
 import { ReservaPergamumPage } from './pages/reservaPergamum';
+import { EquipePage } from './pages/Equipe';
 
 const router = createBrowserRouter([
   {
+    
     path: "/",
+    element: <HomePage/>,
+    errorElement: <HomePage />,
+  },
+  {
+    path: "/biblioteca-ifc-videira",
     element: <HomePage/>,
     errorElement: <HomePage />,
   },
@@ -47,8 +54,13 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/contatos",
-    element: <ContatosPage/>,
+    path: "/contato",
+    element: <ContatoPage/>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/equipe",
+    element: <EquipePage/>,
     errorElement: <ErrorPage />,
   },
   {
@@ -78,18 +90,19 @@ const router = createBrowserRouter([
     element: <HomePage/>,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/noticias",
+    element: <HomePage/>,
+    errorElement: <ErrorPage />,
+  },
     // - post (ebooks): coleção histório geral da africa
     // - post (ebooks): eu e outras poesias
     // - post (ebooks): libertinagem
     // - post (ebooks): Macunaima
     // - post (ebooks): Memórias postumas de brás cubas
     // - post (ebooks): Pauliceia desvairada
-  {
-    path: "/bibliotecas-do-ifc",
-    element: <HomePage/>,
-    errorElement: <ErrorPage />,
-  }
 ]);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

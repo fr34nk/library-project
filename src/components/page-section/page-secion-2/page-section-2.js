@@ -38,7 +38,7 @@ const RightSide = ({
 
 const LeftSide = ({
     children,
-    height="200px"
+    height="250px"
 }) => {
     return (
         <div className={
@@ -64,33 +64,12 @@ const LeftSide = ({
 }
 
 
-// const SectionEmphasisText = ({
-// }) => {
-// }
-
-// const SectionSideEmphasisImage = ({
-// }) => {
-//     // bg-[url('http://127.1.1.1:1111/public/1.png')]
-//     return (
-//         <div className={`
-//             relative
-//             h-full
-//             transfrom scale-[1.1]
-//         `}>
-//             <img 
-//                 className="relative cover"
-//                 src="http://127.1.1.1:1111/public/1.png"
-//             />
-//         </div>
-//     )
-// }
-
-
 const PageSection2 = ({ 
     direction="right"||"left",
     backgroundColor="bg-green-600",
     rightContent=undefined,
-    leftContent=undefined 
+    leftContent=undefined ,
+    height='220px'
 }) => {
 
     console.log(rightContent);
@@ -100,18 +79,18 @@ const PageSection2 = ({
         : "transform -translate-x-1/4 skew-x-12"
 
     return (
-        <div className="
-            w-full 
+        <div className={`
+             w-full 
             overflow-hidden
             relative
-            h-[200px]
+            h-[${height}]
             z-2
-        ">
+        `}>
 
-                {/* bg-gradient-to-b from-lime-500 via-lime-600 to-green-600 */}
             <div className={`
                 absolute
-                w-2/3 h-[200px] 
+                w-2/3 
+                h-[${height}] 
                 ${transformClass}
                 mt-0 my-4 
                 bg-gradient-to-t from-green-600 to-green-700

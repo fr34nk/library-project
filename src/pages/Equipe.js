@@ -3,8 +3,9 @@ import { Header } from '../components/header/header';
 import { Footer } from '../components/footer/footer';
 
 import { PageSection2 } from '../components/page-section/page-secion-2/page-section-2'
+import { B } from '../components/tipografia/emphasis';
 
-const ContatosPage = () => {
+const EquipePage = () => {
     return (
         <div className="bg-gradient-to-t from-zinc-100 via-zinc-100 to-zinc-50">
 
@@ -18,7 +19,7 @@ const ContatosPage = () => {
 
                 <PageSection2 
                     direction='left' 
-
+                    height='300px'
                     leftContent={
                         <div className="
                             p-8
@@ -26,28 +27,6 @@ const ContatosPage = () => {
                             text-green-600
 
                         ">
-                            <h1 className="text text-3xl font-extrabold">
-                                Contato
-                            </h1>
-
-
-                            <p className="pt-2 font-semibold">
-                                Telefone: 49 3256 3222
-                            </p>
-
-                            <p className="pt-2 font-semibold">
-                                Whatsapp: 49 3256 3222
-                            </p>
-
-
-                            <p className="pt-2 font-semibold">
-                                Instagram: @biblioteca-videira
-                            </p>
-
-                            <p className="pt-2 font-semibold">
-                                Facebook: biblioteca-videira@ifc.edu.br
-                            </p>
-
                         </div>
                     }
                     rightContent={
@@ -56,16 +35,21 @@ const ContatosPage = () => {
                                 Equipe
                             </h1>
 
-                            <p className="pt-2 font-semibold">
-                                Bibliotecários: Graziele Reisdorf
+                            <p className="pt-2 ">
+                                <B>Bibliotecário:</B> 
+                                <br/>
+                                Nelson Magalhães de Oliveira
                             </p>
 
                             <p className="pt-2 font-semibold">
-                                Área de Renovação: Maria Ana Beatriz
+                                <B>Auxiliares de Biblioteca:</B>
                             </p>
-
-                            <p className="pt-2 font-semibold">
-                                Área de reservas: Maria Ana Beatriz
+                            <p className="pt-2">
+                                Grasiele Reisdöfer
+                                <br/>
+                                Samantha Vanin Felchilcher
+                                <br/>
+                                Vanessa Bettoni
                             </p>
 
                         </div>
@@ -82,5 +66,5 @@ const ContatosPage = () => {
     )
 }
 
-export { ContatosPage }
+export { EquipePage }
 

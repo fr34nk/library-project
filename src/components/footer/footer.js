@@ -35,39 +35,6 @@ const Footer = () => {
                         flex flex-row flex-wrap gap-5 justify-evenly
                     ">
 
-                        <div className="flex min-w-[200px] ">
-                            <div className="flex flex-col">
-                                <h4 className="pb-2 text-zinc-200 font-semibold"> Funcionamento </h4>
-
-                                <p className="text-zinc-200 text-sm">
-                                    <span>Segunda a sexta</span>: das 8 às 22
-                                </p>
-
-                                <p className="text-zinc-200 text-sm">
-                                    <span>Sábado: </span>: das 8 às 20
-                                </p>
-
-                                <p className="text-zinc-200 text-sm">
-                                    <span>Domingo: </span>: sem expediente
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="flex min-w-[200px]">
-                            <div className="flex flex-col">
-                                <h4 className="pb-2 text-zinc-200 font-semibold">Contatos</h4>
-
-                                <p className="text-zinc-200 text-sm">
-                                    <span>Biblioteca</span>: (49) 3251 2122
-                                </p>
-
-                                <p className="text-zinc-200 text-sm">
-                                    <span>Whatsapp</span>: (49) 3252 8201 
-                                </p>
-
-                            </div>
-                        </div>
-
                         <div className="flex min-w-[200px]">
                             <div className="flex flex-col">
                                 <h4 className="pb-2 text-zinc-200 font-semibold">Links</h4>
@@ -75,6 +42,34 @@ const Footer = () => {
                                 <a className="text-zinc-200 text-sm" href="https://videira.ifc.edu.br/biblioteca">Página biblioteca</a>
                                 <a className="text-zinc-200 text-sm" href="https://videira.ifc.edu.br/biblioteca">BVirtual</a>
                                 <a className="text-zinc-200 text-sm" href="https://videira.ifc.edu.br/biblioteca">Pergamum</a>
+
+                            </div>
+                        </div>
+
+ 
+
+                        <div className="flex min-w-[200px]">
+                            <div className="flex flex-col">
+                                <h4 className="pb-2 text-zinc-200 font-semibold">Contatos</h4>
+
+                                <p className="text-zinc-200 text-sm">
+                                    <span>Biblioteca</span>: (49) 3533-4917
+                                </p>
+
+                                <p className="text-zinc-200 text-sm">
+                                    <span>Whatsapp</span>: (49) 3533-4917
+                                </p>
+
+                            </div>
+                        </div>
+
+                       <div className="flex min-w-[200px] ">
+                            <div className="flex flex-col">
+                                <h4 className="pb-2 text-zinc-200 font-semibold"> Horário de Funcionamento </h4>
+
+                                <p className="text-zinc-200 text-sm">
+                                    <span>Segunda à sexta</span>:  7h30 às 22h.
+                                </p>
 
                             </div>
                         </div>

@@ -2,26 +2,26 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 const headerTree = [
-    { title: "Home", link: ".", alt: "" },
-    { title: "Livros", link: "/servicos", alt: "", 
+    { title: "Home", link: "/biblioteca-ifc-videira", alt: "" },
+    { title: "Livros", alt: "", 
         sublist: [
             { title: "Ebooks", link: "/livros/ebooks", alt: "" },
-            { title: "Guia de Reserva de Livros", link: "/livros/guia-reserva", alt: "" },
-            { title: "Reserva Pergamum", link: "/livros/reserva-pergamum", alt: "" },
+            { title: "Guia de Reserva de Livros", link: "/guias", alt: "" },
+            { title: "Reserva Pergamum", link: "/guias", alt: "" },
             { title: "Resenhas", link: "/eventos/resenhas", alt: "" }
         ]
     },
     { 
-        title: "Tutoriais", link: "/guias", alt: "", sublist: [
+        title: "Tutoriais", alt: "", sublist: [
             { title: "Cursos Aprendizado", link: "/cursos", alt: "" },
             { title: "Guias", link: "/guias", alt: "" }
     ]},
     { 
-        title: "Equipe e Contato", link: "/contatos", alt: "", 
+        title: "Biblioteca",  alt: "", 
             sublist: [
                 { title: "Serviços", link: "/servicos", alt: "" },
-                { title: "Equipe", link: "/contatos", alt: "" },
-                { title: "Contato", link: "/contatos", alt: "" }
+                { title: "Equipe", link: "/equipe", alt: "" },
+                { title: "Contato", link: "/contato", alt: "" }
             ]
     }
 ]
