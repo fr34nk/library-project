@@ -16,6 +16,8 @@ import { ContatosPage } from './pages/contatos-e-equipe';
 import { CursosPage } from './pages/cursos';
 import { ReservasPage } from './pages/reserva';
 import { EbooksPage } from './pages/ebooks';
+import { ErrorPage } from './pages/error';
+import { ReservaPergamumPage } from './pages/reservaPergamum';
 
 const router = createBrowserRouter([
   {
@@ -31,27 +33,33 @@ const router = createBrowserRouter([
   {
     path: "/servicos",
     element: <ServicosPage/>,
-    errorElement: <HomePage />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/livros/ebooks",
     element: <EbooksPage/>,
-    errorElement: <HomePage />,
+    errorElement: <ErrorPage  />,
   },
+  {
+    path: "/livros/reserva-pergamum",
+    element: <ReservaPergamumPage/>,
+    errorElement: <ErrorPage />,
+  },
+
   {
     path: "/contatos",
     element: <ContatosPage/>,
-    errorElement: <HomePage />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/guias",
     element: <GuiasPage/>,
-    errorElement: <HomePage />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/guias/reserva",
     element: <ReservasPage/>,
-    errorElement: <HomePage />,
+    errorElement: <ErrorPage />,
   },
     // - post (guia): guia do usuário
     // - post (guia): fontes de pesquisa
@@ -61,14 +69,14 @@ const router = createBrowserRouter([
   {
     path: "/cursos",
     element: <CursosPage/>,
-    errorElement: <HomePage />,
+    errorElement: <ErrorPage />,
   },
     // - post (cursos): cursos online gratuitos
     // - post (cursos): cursos online gratuitos
   {
     path: "/ebooks",
     element: <HomePage/>,
-    errorElement: <HomePage />,
+    errorElement: <ErrorPage />,
   },
     // - post (ebooks): coleção histório geral da africa
     // - post (ebooks): eu e outras poesias
@@ -79,7 +87,7 @@ const router = createBrowserRouter([
   {
     path: "/bibliotecas-do-ifc",
     element: <HomePage/>,
-    errorElement: <HomePage />,
+    errorElement: <ErrorPage />,
   }
 ]);
 

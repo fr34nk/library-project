@@ -6,7 +6,8 @@ const headerTree = [
     { title: "Livros", link: "/servicos", alt: "", 
         sublist: [
             { title: "Ebooks", link: "/livros/ebooks", alt: "" },
-            { title: "Guia de Reserva de Livros", link: "/guias/reserva", alt: "" },
+            { title: "Guia de Reserva de Livros", link: "/livros/guia-reserva", alt: "" },
+            { title: "Reserva Pergamum", link: "/livros/reserva-pergamum", alt: "" },
             { title: "Resenhas", link: "/eventos/resenhas", alt: "" }
         ]
     },
@@ -48,6 +49,10 @@ const SubList = ({
             { parentItem.title }
 
             {/* invisible */}
+                {/* group-hover/item-lvl-${lvl - 1}:opacity-100
+                group-hover/item-lvl-${lvl - 1}:top-[100%] */}
+
+
             <ul className={`
                 absolute left-[10%] top-[90%] 
                 w-full my-auto justify-center
@@ -56,9 +61,12 @@ const SubList = ({
 
                 group-hover/item-lvl-${lvl - 1}:visible 
 
+                invisible
                 opacity-0 
-                group-hover/item-lvl-${lvl - 1}:opacity-100
-                group-hover/item-lvl-${lvl - 1}:top-[100%]
+
+                group-hover:opacity-100
+                group-hover:top-[100%]
+                group-hover:visible
             `}>
 
                 { ItemList }
@@ -81,7 +89,6 @@ const HeaderItem = ({
                         key={_key} 
                         to={link}
                         className={`
-                            group/item-lvl-${lvl}
                             text-sm text-green-700 font-bold 
                             border-r-[1px] border-slate-200 last:border-0
                             bg-slate-100 hover:bg-slate-200
@@ -104,12 +111,10 @@ const HeaderItem = ({
 
                     </Link>
                 : 
-
                     <li
                         key={_key} 
                         className={`
                             relative
-                            group/item-lvl-${lvl}
                             text-sm text-green-700 font-bold 
                             border-r-[1px] border-slate-200 last:border-0
                             bg-slate-100 hover:bg-slate-200
@@ -117,6 +122,9 @@ const HeaderItem = ({
                             px-4 py-4  gap-0 m-0
                             flex flex-auto my-auto
                             transition-all ease-in duration-200 delay-100
+
+                            group
+
                             `}
                         style={{ zIndex: 10 }}
                     >

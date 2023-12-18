@@ -23,7 +23,7 @@ const HomePage = () => {
                     <img 
                         alt=""
                         className="" 
-                        src="/biblioteca_ifc_v1.jpg"
+                        src="./biblioteca_ifc_v1.jpg"
                     />
                     <h1 className="
                         w-1/2
@@ -52,7 +52,7 @@ const HomePage = () => {
                 <div className="
                     relative
 
-                    h-6 z-20 p-3
+                    h-6 z-10 p-3
                     flex-row flex-wrap
                     bg-gradient-to-b from-slate-100 to-slate-200
 
@@ -94,10 +94,13 @@ const HomePage = () => {
                     <SectionCall
                         direction="right"
                         section={{
-                            img: '/biblioteca_ifc_v1.jpg',
-                            title: 'Eventos',
+                            img: './biblioteca_ifc_v1.jpg',
+                            title: 'Apresentação',
                             subtitle: 'Palestras e participações ',
-                            text: 'orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                            text: `
+                           A Biblioteca do Instituto Federal Catarinense (IFC) – Câmpus Videira – dispõe de infraestrutura e acervo para atendimento aos estudantes dos cursos
+                            técnicos, superiores e de pós-graduação. Todas as orientações, normas e procedimentos com relação ao uso do espaço e acervo estão contidas no regimento da unidade.
+                            `
                         }}
                     />
                 </div>
