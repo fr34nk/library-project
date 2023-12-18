@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 const headerTree = [
-    { title: "Home", link: "./", alt: "" },
+    { title: "Home", link: ".", alt: "" },
     { title: "Livros", link: "/servicos", alt: "", 
         sublist: [
             { title: "Ebooks", link: "/livros/ebooks", alt: "" },
