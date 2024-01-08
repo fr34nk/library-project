@@ -5,18 +5,19 @@ const Card = ({
     img,
     link,
     text,
+    maxWidth=""
 }) => {
 
     return (
         <div className="
             flex flex-col bg-slate-100
-            w-[20%]
-            p-2
+            min-w-[150px]
+            p-4
             justify-between
             rounded-sm
         ">
             <div className="w-full ">
-                <img className="w-full h-[50px] object-cover" src={img} />
+                <img alt="" className="w-full h-[50px] object-cover" src={img} />
             </div>            
             <div className="py-3 font-semibold text-sm/[1.2em]">
                 { title }
@@ -24,7 +25,7 @@ const Card = ({
 
             { 
                 text && 
-                <div>
+                <div className="text-zinc-500 text-sm pt-2 pb-2">
                     { text }
                 </div>
             }
